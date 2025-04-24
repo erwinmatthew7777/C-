@@ -1,0 +1,8 @@
+# ninja log v6
+11	194	7671306680941033	CMakeFiles/basics.dir/src/functions.cpp.obj	8ab8a8e8a7d82290
+33	2303	7672172801695660	CMakeFiles/basics.dir/src/main.cpp.obj	46595e486fed1b5b
+2304	2946	7672172824413472	basics.exe	42b5cd3094e26309
+37	1189	7672184702337903	CMakeFiles/basics.dir/src/functions.cpp.obj	8ab8a8e8a7d82290
+52	1342	7672184702497707	CMakeFiles/basics.dir/src/functions2.cpp.obj	3a735ab8ad21d7ce
+45	1347	7672184702427729	CMakeFiles/basics.dir/src/main.cpp.obj	46595e486fed1b5b
+1348	1991	7672184715453216	basics.exe	f0854b7aaac8d4bb

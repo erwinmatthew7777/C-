@@ -1,0 +1,3 @@
+D:/Desktop/Uni/SoSe2025/C++/Üb1/Templates-Uebung1/basics/cmake-build-debug/CMakeFiles/basics.dir
+D:/Desktop/Uni/SoSe2025/C++/Üb1/Templates-Uebung1/basics/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Desktop/Uni/SoSe2025/C++/Üb1/Templates-Uebung1/basics/cmake-build-debug/CMakeFiles/rebuild_cache.dir

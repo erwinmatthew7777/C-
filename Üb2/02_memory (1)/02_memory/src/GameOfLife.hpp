@@ -35,7 +35,7 @@ class GameOfLife {
 
     const Universe& getColonies() const;
 
-    void writeToFile(std::string filename) {}
+    void writeToFile(const std::string& filename); //3a)
 
     static GameOfLife readFromFile(std::string filename) { return GameOfLife(1, 1, 50); }
 };

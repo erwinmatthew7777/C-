@@ -1,5 +1,5 @@
-#include "Colony.hpp" // DEclare the class. Following that hpp
-#include <cassert> // For sanitz checks
+#include "Colony.hpp" // Declare the class. Following that hpp
+#include <cassert> // For sanity checks //TODO: cassert = expectEquals in Java?
 
 Colony::Colony(bool initial_state)
 // Colony newcolony(true); to create a new colony object Colony:: because is using the Colony hpp

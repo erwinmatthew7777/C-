@@ -47,3 +47,40 @@ std::ofstream outputFile(filename);//Open file in write mode(ofstream) (std::ifs
         }
    outputFile << "\n"; }
 }
+void GameOfLife::iterate() {
+    // PHASE 1: Calculate next states
+    for (size_t y = 0; y < y_size; ++y) {
+        for (size_t x = 0; x < x_size; ++x) {
+            int numberOfNeighbours = 0; // increment for number of neighbours in each case.
+
+            // Check 3x3 grid around (x, y)
+            for (int dist_x = -1; dist_x <= 1; ++dist_x) {
+                for (int dist_y = -1; dist_y <= 1; ++dist_y) {
+                    if (dist_x == 0 && dist_y == 0) continue; // skip self
+
+                    // Relative positions
+                    int nx = static_cast<int>(x) + dist_x;
+                    int ny = static_cast<int>(y) + dist_y;
+
+                    // BOUNDS CHECK
+                    if (nx >= 0 && ny >= 0 &&
+                        nx < static_cast<int>(x_size) &&
+                        ny < static_cast<int>(y_size)) {
+                        if (colonies_[ny][nx]->getState()) {
+                            ++numberOfNeighbours;
+                        }
+                    }
+                }
+            }
+
+            colonies_[y][x]->calculateNextState(numberOfNeighbours);
+        }
+    }
+
+    // PHASE 2: Apply state transitions
+    for (size_t y = 0; y < y_size; ++y) {
+        for (size_t x = 0; x < x_size; ++x) {
+            colonies_[y][x]->evolve();
+        }
+    }
+}
